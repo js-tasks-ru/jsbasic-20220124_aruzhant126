@@ -1,9 +1,6 @@
-function showSalary(users, age) {
-  return users, age 
-  .map (
-    function (userAge) {
-      if (userAge <= age) {
-        return users.toString(`\n{user.name , user.balance}`)
-      }
-    })
+function showSalary(data, age) {
+  return data
+    .filter(item => item.age <= age)
+    .map(item => `${item.name}, ${item.balance}`)
+    .join('\n');
 }
