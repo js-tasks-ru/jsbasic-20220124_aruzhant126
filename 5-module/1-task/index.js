@@ -1,9 +1,11 @@
-const elem = document.getElementsByClassName('hide-self-button');
-
-elem.addEventListener ('click',hideSelf )
+const elements = document.getElementsByClassName('hide-self-button');
+for (const element of elements) {
+  element.addEventListener ('click',hideSelf )
+}
 
 function hideSelf() {
-if (!elem.hidden) {
-  elem.style.display = 'none';
+  for  (const element of elements) {
+  element.hidden === false;
+  }
 }
-}
+
