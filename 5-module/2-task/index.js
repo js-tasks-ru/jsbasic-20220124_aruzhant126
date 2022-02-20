@@ -1,6 +1,10 @@
-element = document.getElementsByClassName("toggle-text-button");
-element.addEventListener(click,toggleText );
+const elements = document.getElementsByClassName("toggle-text-button");
+const text = document.getElementById("text");
 
+for (const element of elements) {
+  element.addEventListener ('click',toggleText )
+}
 function toggleText() {
-  // ваш код...
+  let isTextHidden = text.hidden;
+  text.hidden = !isTextHidden;
 }
