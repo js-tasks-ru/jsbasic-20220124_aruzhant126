@@ -5,7 +5,7 @@ for (const element of elements) {
 
 function hideSelf() {
   for  (const element of elements) {
-  element.hidden === false;
+    element.setAttribute("hidden", true);
   }
 }
 
